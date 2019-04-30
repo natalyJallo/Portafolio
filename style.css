@@ -14,6 +14,37 @@ h1 {
   text-transform: uppercase;
 }
 
+
+.img-container{
+  position:relative;
+  display:inline-block;
+}
+.img-container .overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(212, 175, 55, 0.931);
+  opacity:0;
+  transition:opacity 500ms ease-in-out;
+}
+.img-container:hover .overlay{
+  opacity:1;
+}
+.overlay span{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#fff;
+}
+
+.over {
+  text-align: center;
+  padding-top: 150px;
+}
+
 /* ---------------- Header ---------------- */
 .img-menu:hover {
   color: #DFBC3C;
@@ -25,19 +56,21 @@ h1 {
   font-weight: bolder;
   background-color: #111;
   width: 100%;
-  height: 40px;
+  height: 80px;
 }
 .logo2 {
 width: 50px;
 height: 50px;
 border-radius: 350px;
 float: left;
+margin-left: 25px;
 }
 .text4 {
   float: left;
   font-size: 15px;
   letter-spacing: 3px;
   margin-left: 20px;
+  margin-top: 20px;
 }
  .menu-bar {
   display: none;
@@ -48,7 +81,7 @@ float: left;
 }
 
 .icon-menu {
- width: 40px;
+ width: 80px;
  height: 40px;
  cursor: pointer;
  text-align: right;
@@ -64,7 +97,7 @@ float: left;
     width: 30%;
     transform: translatex(100%);
     transition: all 0.3s;
-    height: 600px;
+    height: 100vh;
     top: 0;
 }
 .list {
@@ -88,6 +121,7 @@ float: left;
 }
 .section {
   padding: 1px 10px;
+  padding-bottom: 50px;
 }
 .top {
   padding-top: 120px;
@@ -97,6 +131,11 @@ float: left;
   font-family: 'Montserrat', sans-serif;
   color: #FFF;
 }
+
+.title-nav:hover{
+ color: #FFF;
+}
+
 #title2:focus {
   outline: none;
 }
@@ -109,13 +148,18 @@ float: left;
   font-size: 1.5em; /* This adds a hover effect */
   line-height: 1em;
   transition: font-size .2s cubic-bezier(0, 0.75, 0, 1);
+  text-decoration: none;
 }
+
+
 #title2 span:active {
   font-size: 1em;
   text-shadow: none; /* Click to disable the 3D effect */
+  text-decoration: none;
 }
 #title2 span::selection {
-  background-color: red; /* This hides the selection */
+  /*background-color: red;  This hides the selection */
+  text-decoration: none;
 }
 
 /* ---------------- Welcome ---------------- */
@@ -123,6 +167,23 @@ float: left;
     top: 0px;
     bottom: 0px;
     background-color: white;
+}
+div.container-fluid{ 
+  width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.welcome {
+  height: 645px;
+  width: 100%;
+  background-color: black;
+}
+.color {
+  background: black;
 }
 .title {
     font-family: "Montserrat";
@@ -134,21 +195,18 @@ float: left;
     letter-spacing: 1px;
     clear: left;
     padding: 5px 37px;
-    margin-top: 50px;
 }
 .hight {
-  height: 50px;
+  height: 40px;
 }
-.font {
-  font-size: 14px;
-}
+
 .text-general {
   font-family: "Montserrat";
 }
 .text {
   width: 100%;
   float: left;
-  margin-top: 80px;
+  margin-top: 160px;
 }
 .text-effect {
   background-image: url('https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif');
@@ -169,12 +227,16 @@ float: left;
     letter-spacing: 3px
 }
 .icons{ 
-  margin-top: 70px;
+  margin-top: 120px;
 }
 .icon {
   width: 30px;
   height: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+ }
+
+ .margin-2 {
+  margin-right: 25px;
  }
  .white-mode {
   text-decoration: none;
@@ -191,6 +253,16 @@ float: left;
 }
 
 /* ---------------- AboutMe ---------------- */
+
+.text-span{
+  color: #DFBC3C;
+}
+.padding-section {
+  padding: 0px 200px;
+}
+.hight-3 {
+  height: 300px;
+}
 .text-section {
   font-size: 30px;
   word-break: break-all;
@@ -300,9 +372,11 @@ list-style: none;
   /* background-color: white; */
   padding: 30px 10px;
   background-color: rgba(230, 182, 11, 0.4);
+  text-decoration: none;
 }
 .content2:hover {
   background-color: rgba(223, 188, 60, 0.2);
+  text-decoration: none;
 }
 
 .summary-2 {
@@ -333,7 +407,7 @@ list-style: none;
 }
 .summary {
   text-align: center;
-  font-size: 15px;
+  font-size: 18px;
   margin: 40px 37px;
 }
 .colum-3 {
@@ -366,6 +440,20 @@ list-style: none;
 .height {
   height: 400px;
 }
+
+.text-proyect {
+  text-align: center;
+    margin-top: 20px;
+    color: rgb(255, 193, 7, 1);
+}
+
+.btn-proyect{
+  text-align: center;
+}
+
+.card-margin{ 
+  margin-top: 50px;
+}
 /* ---------------- Skills ---------------- */
 .row2 {
   padding: 0px 40px;
@@ -383,21 +471,26 @@ list-style: none;
   margin-bottom: 50px;
   margin-top: 30px;
 }
-.btn {
+.btn-2 {
   border: none;
   outline: none;
-  padding: 12px 16px;
+  /* padding: 12px 16px; */
   background-color: white;
   cursor: pointer;
   font-family: 'Montserrat', sans-serif;
+  padding: 5px 40px;
+  border-radius: 15px;
+
+  
 }
-.btn.active {
+.btn-2.active {
   background-color: #DFBC3C;
   color: white;
 }
-.btn:hover {
+.btn-2:hover {
   background-color: rgba(223, 188, 60, 0.548);
   color: #111111;
+  text-decoration: none;
 }
 .column2 {
   float: left;
@@ -425,13 +518,129 @@ list-style: none;
   color: #111111;
 }
 
+.text-skills {
+  font-size: 18px;
+    /* padding-top: 20px; */
+    padding: 20px;
+    text-align: center;
+}
+.font {
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.row3 {
+  padding: 0px 80px;
+}
+
+.padding-2 {
+  padding-top: 20px;
+}
+.margin-b-50{ margin-bottom: 50px; }
+
+.radial-progress{ position: relative; max-width: 180px; margin: 0 auto; }
+
+.radial-progress .progressbar-text{ font-size: 2.2em; font-weight: 500; 
+	padding-bottom: 25px!important; color: #333!important; }
+
+.radial-progress .progressbar-text:after{ content:'%'; }
+
+.radial-progress .progress-title{ position: absolute; top: 50%; left: 50%; width: 100%;
+	letter-spacing: 0; text-align: center; color: #777; 
+	-webkit-transform: translate(-50%, 15px); transform: translate(-50%, 15px); }
+
+.line-progress .progress-title{ position: absolute; bottom: 0; left: 0; color: #777; }
+
+/* optro estilo */
+
+.wrapper {
+  width: 100px; /* Set the size of the progress bar */
+  height: 100px;
+  position: absolute; /* Enable clipping */
+  clip: rect(0px, 100px, 100px, 50px); /* Hide half of the progress bar */
+}
+/* Set the sizes of the elements that make up the progress bar */
+.circle {
+  width: 80px;
+  height: 80px;
+  border: 10px solid green;
+  border-radius: 50px;
+  position: absolute;
+  clip: rect(0px, 50px, 100px, 0px);
+}
+/* Using the data attributes for the animation selectors. */
+/* Base settings for all animated elements */
+div[data-anim~=base] {
+  -webkit-animation-iteration-count: 1;  /* Only run once */
+  -webkit-animation-fill-mode: forwards; /* Hold the last keyframe */
+  -webkit-animation-timing-function:linear; /* Linear animation */
+}
+
+.wrapper[data-anim~=wrapper] {
+  -webkit-animation-duration: 0.01s; /* Complete keyframes asap */
+  -webkit-animation-delay: 3s; /* Wait half of the animation */
+  -webkit-animation-name: close-wrapper; /* Keyframes name */
+}
+
+.circle[data-anim~=left] {
+  -webkit-animation-duration: 6s; /* Full animation time */
+  -webkit-animation-name: left-spin;
+}
+
+.circle[data-anim~=right] {
+  -webkit-animation-duration: 3s; /* Half animation time */
+  -webkit-animation-name: right-spin;
+}
+/* Rotate the right side of the progress bar from 0 to 180 degrees */
+@-webkit-keyframes right-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(180deg);
+  }
+}
+/* Rotate the left side of the progress bar from 0 to 360 degrees */
+@-webkit-keyframes left-spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+/* Set the wrapper clip to auto, effectively removing the clip */
+@-webkit-keyframes close-wrapper {
+  to {
+    clip: rect(auto, auto, auto, auto);
+  }
+}
+
+.cards-skill {
+  margin-bottom: 20px;
+}
 
 /* ---------------- Contact ---------------- */
+
+.contact-2{
+  width: 200px;
+    height: 30px;
+    font-size: 15px;
+}
+
+.text-contact {
+  width: 100%;
+  margin: auto;
+}
+.margin-contac{
+  margin-bottom: 46px;
+  justify-content: center;
+}
 .btn-cv {
   width: 100px;
   height: 35px;
   margin: auto;
-  background-color: #DFBC3C;
+  background-color: #ffc107;
   padding: 7px 20px;
   border-radius: 3px;
   transition: .35s ease-in-out;
@@ -462,9 +671,12 @@ list-style: none;
     color: #FFF;
     height: 50px;
     text-align: center;
-    font-size: 8px;
     padding-top: 5px;
     font-family: "Montserrat";
+}
+
+.text-footer {
+  font-size: 15px;
 }
 
 @media ( min-width: 1200px) and (max-width: 1500px) {
@@ -638,4 +850,5 @@ width: 350px;
   .padding-left {
     padding: 70px 50px;
  }
+}
 }

@@ -6,30 +6,69 @@
     <title>Portafolio Personal</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel = "hoja de estilo" href = "progress-circle.css" >
     <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- <link rel="stylesheet" href="intro/bootstrap.min.css"> -->
 </head>
+<!-- <style>a {text-decoration: none;} </style> -->
 <body>
     <header class="logo container-fluid">
         <img class="logo2" src="img/foto5.jpeg" alt="logo"><h2 class="text4">Nataly Jallo</h2>
         <input class="menu-bar" type="checkbox" id="menu-bar">
-        <label class="icon-menu" for="menu-bar"><img src="img/menu.png" alt="icono de menu" class="img-menu"></label>
+        <label class="icon-menu" for="menu-bar"><img src="img/menu.png" alt="icono de menu" class="img-menu margin-2"></label>
         <nav class="menu-nav">
           <ul class="list">
               <label class="modal-close" for="menu-bar">x</label>
-            <li class="section top" id="home"><a class="style-text text3" href="#/welcome"><h4 id="title2" contenteditable="false" spellcheck="false"><span>Home</span></h4></a></li>
-            <li class="section" id="aboutme"><a class="style-text text3" href="#/aboutMe"><h4 id="title2" contenteditable="false" spellcheck="false"><span>Sobre mi</span></h4></a></li>
-            <li class="section" id="portafolio"><a class="style-text text3" href="#/portafolio"><h4 id="title2" contenteditable="false" spellcheck="false"><span>Portafolio</span></h4></a></li>
-            <li class="section" id="skills"><a class="style-text text3" href="#/skills"><h4 id="title2" contenteditable="false" spellcheck="false"><span>Habilidades</span></h4></a></li>
-            <li class="section" id="contact"><a class="style-text text3" href="#/contact"><h4 id="title2" contenteditable="false" spellcheck="false"><span>Contactame</span></h4></a></li>
+            <li class="section top" id="home"><a class="style-text text3" style="text-decoration: none;" href="#/welcome"><h4 id="title2" contenteditable="false" spellcheck="false"><span class="title-nav">Home</span></h4></a></li>
+            <li class="section" id="aboutme"><a class="style-text text3" style="text-decoration: none;" href="#/aboutMe"><h4 id="title2" contenteditable="false" spellcheck="false"><span class="title-nav">Sobre mi</span></h4></a></li>
+            <li class="section" id="portafolio"><a class="style-text text3" style="text-decoration: none;" href="#/portafolio"><h4 id="title2" contenteditable="false" spellcheck="false"><span class="title-nav">Portafolio</span></h4></a></li>
+            <li class="section" id="skills"><a class="style-text text3" style="text-decoration: none;" href="#/skills"><h4 id="title2" contenteditable="false" spellcheck="false"><span class="title-nav">Habilidades</span></h4></a></li>
+            <li class="section" id="contact"><a class="style-text text3" style="text-decoration: none;" href="#/contact"><h4 id="title2" contenteditable="false" spellcheck="false"><span class="title-nav">Contactame</span></h4></a></li>
           </ul>
         </nav>
     </header>
-    <div id="container" class="container container-fluid"></div>
+    <div id="container" class="container-fluid"></div>
 
     <!-- <footer class='footer'>
       <p>By NatalyJallo</p>
     </footer> -->
+
+    <!-- <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"></rect><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+    <hr class="featurette-divider"> -->
+
+
 
     <script type="module" src="main.js"></script>
 </body>
