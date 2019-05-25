@@ -27,52 +27,115 @@ export const templates = {
     return section;
     },
     aboutMe: () => {
-        const templ = `
-        <div class="">
-        <h1 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>Sobre mi</span></h1>
-        <p class="description-1 padding-left float-1 text-general"><span class="quotes">"</span> Soy Front End Developer y marketera profesional, creativa, empática y curiosa 
-          innata. Me encanta descubrir y aprender cosas nuevas porque siento que eso 
-          alimenta mi espíritu creativo. <span class="quotes">"</span></p>
-          <div class="slider">
-            <ul>
-              <li><img class="img-slide" src="img/foto17.jpg" alt=""></li>
-              <li><img class="img-slide" src="img/foto5-1.jpg" alt=""></li>
-              <li><img class="img-slide" src="img/foto7.jpg" alt=""></li>
-              <li><img class="img-slide" src="img/foto3.jpg" alt=""></li>
-            </ul>
-          </div>
+      const templ = `
+      <h1 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>Sobre mi</span></h1>
+      <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Me encanta como soy. <span class="text-span">"Soy curiosa innata"</span></h2>
+      <p class="lead">Soy Front End Developer y marketera profesional, creativa, empática y curiosa 
+      innata. Me encanta descubrir y aprender cosas nuevas porque siento que eso 
+      alimenta mi espíritu creativo. </p>
+    </div>
+    <div class="col-md-5">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="img/foto17.jpg" class="d-block w-100 hight-3" alt="me gusta leer libros">
+      </div>
+      <div class="carousel-item" >
+        <img src="img/foto5-1.jpg" class="d-block w-100 hight-3" alt="proyecto de chatbot en IBM">
+      </div>
+      <div class="carousel-item">
+        <img src="img/foto3-1.jpg" class="d-block w-100 hight-3" alt="Equipo de trabajo con mariana costa">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">La pasion por lo que haces, <span class="text-span">"te hara entender que los limites son mentales"</span></h2>
+      <p class="lead">Me apasiona poder crear productos digitales a través del código utilizando 
+      una gran variedad de herramientas de programación, también me apasiona todo 
+      aquello que rete y desafíe mis conocimientos, pues considero que es una 
+      forma de motivación para seguir aprendiendo.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="img/foto6-1.jpg" class="d-block w-100" alt="Taller de chatbot en IBM">
+      </div>
+      <div class="carousel-item" >
+        <img src="img/foto11-3.jpg" class="d-block w-100" alt="Codigo de programacion de un proyecto">
+      </div>
+      <div class="carousel-item">
+        <img src="img/foto2-2.jpg" class="d-block w-100" alt="compartiendo un poco de tiempo libre despues de cada presentacion de proyecto">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    </div>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Por ultimo. <span class="text-span">Disfruto la libertad como trabajar en equipo.</span></h2>
+      <p class="lead">Me adapto con facilidad, disfruto la libertad y el nivel de responsabilidad
+      que implica trabajar individualmente, y también lo enriquecedor que resulta 
+       trabajar en equipo.</p>
+    </div>
+    <div class="col-md-5">
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" >
+        <img src="img/foto4.jpg" class="d-block w-100" alt="Mi equipo de proyecto en el taller de IBM">
+      </div>
+      <div class="carousel-item" >
+        <img src="img/foto12.jpg" class="d-block w-100" alt="Presentando cada proyecto como reto en el bootcamp">
+      </div>
+      <div class="carousel-item">
+        <img src="img/foto4-1.jpg" class="d-block w-100" alt="Todo el equipo de trabajo de Laboratoria y mis compañeras de bootcamp">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+    </div>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+      `;
+    const section = document.createElement('section');
+    section.setAttribute('id', 'aboutMe');
+    section.setAttribute('class', 'padding-section');
+    section.innerHTML = templ;
 
-          <p class="description-1 padding-left float-3 text-general"><span class="quotes">"</span> Me apasiona poder crear productos digitales a través del código utilizando 
-          una gran variedad de herramientas de programación, también me apasiona todo 
-          aquello que rete y desafíe mis conocimientos, pues considero que es una 
-          forma de motivación para seguir aprendiendo. <span class="quotes">"</span></p>
+    return section;
 
-          <div class="slider float-1 margin space-left">
-            <ul>
-              <li><img class="img-slide" src="img/foto6-1.jpg" alt=""></li>
-              <li><img class="img-slide" src="img/foto11-3.jpg" alt=""></li>
-              <li><img class="img-slide" src="img/foto1-2.jpg" alt=""></li>
-              <li><img class="img-slide" src="img/foto2-2.jpg" alt=""></li>
-            </ul>
-          </div>
-  
-        <p class="description-1 padding-left float-1 text-general space-top"><span class="quotes">"</span> Me adapto con facilidad, disfruto la libertad y el nivel de responsabilidad
-           que implica trabajar individualmente, y también lo enriquecedor que resulta 
-            trabajar en equipo. <span class="quotes">"</span></p>
-            <div class="slider">
-              <ul>
-                <li><img class="img-slide" src="img/foto4.jpg" alt=""></li>
-                <li><img class="img-slide" src="img/foto12.jpg" alt=""></li>
-                <li><img class="img-slide" src="img/foto4-1.jpg" alt=""></li>
-                <li><img class="img-slide" src="img/foto3-1.jpg" alt=""></li>
-              </ul>
-            </div>
-      </div>`;
-      const section = document.createElement('section');
-      section.setAttribute('id', 'aboutMe');
-      section.innerHTML = templ;
-
-      return section;
 
     },
     portafolio: () => {

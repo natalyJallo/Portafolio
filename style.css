@@ -591,6 +591,7 @@ width: 350px;
   .description-1 {
     width: 100%;
 }
+}
  
 @media ( min-width: 350px) and (max-width: 550px) {
   .column {
