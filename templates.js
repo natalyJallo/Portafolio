@@ -41,13 +41,16 @@ export const templates = {
                           <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img src="img/foto6-2.jpg" class="d-block w-100" alt="Taller de chatbot en IBM">
+                                <img src="img/grupo-2.jpeg" class="d-block w-100" alt="Taller de chatbot en IBM">
                               </div>
                               <div class="carousel-item">
                                 <img src="img/foto3-1.jpg" class="d-block w-100" alt="Trabajo en equipo">
                               </div>
                               <div class="carousel-item">
                                <img src="img/foto4-2.jpg" class="d-block w-100" alt="Charla en IBM">
+                              </div>
+                              <div class="carousel-item">
+                               <img src="img/foto6-2.jpg" class="d-block w-100" alt="Taller de chatbot en IBM">
                               </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
