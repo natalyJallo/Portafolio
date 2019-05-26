@@ -12,7 +12,7 @@
 #mainNav .navbar-toggler {
   font-size: 80%;
   padding: 0.75rem;
-  color: #64a19d;
+  color: #ffffff;
   border: 1px solid #64a19d;
 }
 
@@ -21,8 +21,7 @@
 }
 
 #mainNav .navbar-brand {
-  color: #161616;
-  font-weight: 700;
+  color: #ffffff;
   padding: .9rem 0;
 }
 
@@ -48,16 +47,16 @@
   }
   #mainNav .navbar-brand {
     padding: .5rem 0;
-    color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
   }
   #mainNav .nav-link {
     -webkit-transition: none;
     transition: none;
     padding: 2rem 1.5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #ffffff;
   }
   #mainNav .nav-link:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color:#ffc74d;
   }
   #mainNav .nav-link:active {
     color: white;
@@ -66,22 +65,22 @@
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #161616;
+    color: #ffffff;
   }
   #mainNav.navbar-shrink .nav-link {
-    color: #161616;
+    color: #ffffff;
     padding: 1.5rem 1.5rem 1.25rem;
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color:#ffc107;
   }
   #mainNav.navbar-shrink .nav-link:active {
-    color: #467370;
+    color: #ffffff;
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #64a19d;
-    outline: none;
+    color: #ffffff;
+    /* outline: none; */
     border-bottom: 0.25rem solid #64a19d;
   }
 }
@@ -141,9 +140,9 @@
 .btn {
   -webkit-box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
+  padding: 1rem;
   font-family: 'Varela Round';
-  font-size: 80%;
+  font-size: 60%;
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
@@ -230,12 +229,12 @@
 }
 
 .contact-section {
-  padding: 5rem 0 0;
+  padding: 2rem 0 0;
 }
 
 .contact-section .card {
   border: 0;
-  border-bottom: 0.25rem solid #64a19d;
+  border-bottom: 0.25rem solid #edba1f;
 }
 
 .contact-section .card h4 {
@@ -246,7 +245,7 @@
 }
 
 .contact-section .card hr {
-  border-color: #64a19d;
+  border-color: #edba1f;
   border-width: 0.25rem;
   width: 3rem;
 }
@@ -274,12 +273,12 @@
 }
 
 body {
-  font-family: 'Nunito';
+  font-family: "Montserrat";
   letter-spacing: 0.0625em;
 }
 
 a {
-  color: #64a19d;
+  color: #ffffff;
 }
 
 a:focus, a:hover {
@@ -300,5 +299,5 @@ a:focus, a:hover {
 }
 
 footer {
-  padding: 5rem 0;
+  padding: 1.5rem 0;
 }

@@ -1,133 +1,85 @@
-// import {filterSelection, active} from "./app.js"
 
 export const templates = {
     welcome: () => {
-        const templ = `<div class="title hight text-general">
-        <div class="text">
-      <h1 class="text-effect">Hola.</h1>
-      <h2 class="text2-section text-effect">Soy Nataly</h2>
-      <h3 class="text3">Front End Developer</div>
-      <div class="icons">
-      <a href="https://github.com/natalyJallo" target="_blank"><img class="icon" src="img/github1.png" alt="github"><br></a>
-      <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><img class="icon" src="img/google1.png" alt="gmail"><br></a>
-      <a href="https://www.linkedin.com/in/nataly-jallo-arana-750394137/" target="_blank"><img class="icon" src="img/linked.png" alt="linkedin"><br></a>
-      <a href="https://twitter.com/natijallo?lang=es" target="_blank"><img class="icon" src="img/twitter1.png" alt="twitter"><br></a>
-      <a href="https://www.facebook.com/nati.jallo" target="_blank"><img class="icon" src="img/face.png" alt="facebook"></div></a>
-      <a href="#/aboutMe" class="white-mode left">MAS SOBRE MI</a>
-    </div>`;
+        const templ = `
+                  <div class="title hight text-general">
+                    <div class="text">
+                      <h1 class="text-effect">Hola.</h1>
+                      <h2 class="text2-section text-effect">Soy Nataly</h2>
+                      <h2 class="text-white-50 mx-auto mt-2 mb-5 text3">Front End Developer</h2>
+                      <a href="#/aboutMe" class="btn btn-warning js-scroll-trigger">Conóceme mas</a>
+                    </div>
+                  </div>
+     `;
 
     const section = document.createElement('section');
     section.setAttribute('id', 'welcome');
+    section.setAttribute('class', 'welcome');
     section.innerHTML = templ;
     
-    // const btnAboutMe = section.querySelector('#aboutme')
-    // btnAboutMe.addEventListener('click', () => {
-    //     window.location.hash = '#/aboutMe';
-    //   });
     return section;
     },
     aboutMe: () => {
       const templ = `
-      <h1 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>Sobre mi</span></h1>
-      <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Me encanta como soy. <span class="text-span">"Soy curiosa innata"</span></h2>
-      <p class="lead">Soy Front End Developer y marketera profesional, creativa, empática y curiosa 
-      innata. Me encanta descubrir y aprender cosas nuevas porque siento que eso 
-      alimenta mi espíritu creativo. </p>
-    </div>
-    <div class="col-md-5">
-    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" >
-        <img src="img/foto17.jpg" class="d-block w-100 hight-3" alt="me gusta leer libros">
-      </div>
-      <div class="carousel-item" >
-        <img src="img/foto5-1.jpg" class="d-block w-100 hight-3" alt="proyecto de chatbot en IBM">
-      </div>
-      <div class="carousel-item">
-        <img src="img/foto3-1.jpg" class="d-block w-100 hight-3" alt="Equipo de trabajo con mariana costa">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-    </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading">La pasion por lo que haces, <span class="text-span">"te hara entender que los limites son mentales"</span></h2>
-      <p class="lead">Me apasiona poder crear productos digitales a través del código utilizando 
-      una gran variedad de herramientas de programación, también me apasiona todo 
-      aquello que rete y desafíe mis conocimientos, pues considero que es una 
-      forma de motivación para seguir aprendiendo.</p>
-    </div>
-    <div class="col-md-5 order-md-1">
-    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" >
-        <img src="img/foto6-1.jpg" class="d-block w-100" alt="Taller de chatbot en IBM">
-      </div>
-      <div class="carousel-item" >
-        <img src="img/foto11-3.jpg" class="d-block w-100" alt="Codigo de programacion de un proyecto">
-      </div>
-      <div class="carousel-item">
-        <img src="img/foto2-2.jpg" class="d-block w-100" alt="compartiendo un poco de tiempo libre despues de cada presentacion de proyecto">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-    </div>
-    </div>
-  </div>
-  <hr class="featurette-divider">
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Por ultimo. <span class="text-span">Disfruto la libertad como trabajar en equipo.</span></h2>
-      <p class="lead">Me adapto con facilidad, disfruto la libertad y el nivel de responsabilidad
-      que implica trabajar individualmente, y también lo enriquecedor que resulta 
-       trabajar en equipo.</p>
-    </div>
-    <div class="col-md-5">
-    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active" >
-        <img src="img/foto4.jpg" class="d-block w-100" alt="Mi equipo de proyecto en el taller de IBM">
-      </div>
-      <div class="carousel-item" >
-        <img src="img/foto12.jpg" class="d-block w-100" alt="Presentando cada proyecto como reto en el bootcamp">
-      </div>
-      <div class="carousel-item">
-        <img src="img/foto4-1.jpg" class="d-block w-100" alt="Todo el equipo de trabajo de Laboratoria y mis compañeras de bootcamp">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-    </div>
-    </div>
-  </div>
-  <hr class="featurette-divider">
+                      <h1 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>Sobre mi</span></h1>
+                      <div class="row featurette">
+
+                        <div class="col-md-6 order-md-2">
+                          <h2 class="featurette-heading" style="font-size: 1.3rem">Me encanta como soy. <span class="text-span">"Soy curiosa innata"</span></h2>
+                            <p class="lead" style="font-size: 0.8rem; text-align: justify">Soy Front End Developer y marketera profesional, creativa, empática y curiosa 
+                              innata.Desde pequeña he luchado contra muchas adversidades que me motivaron a buscar soluciones,
+                              es por ello me gusta crear soluciones que genere un gran impacto en las personas, también me apasiona todo 
+                              aquello que rete y desafíe mis conocimientos, pues considero que es una 
+                              forma de motivación para seguir aprendiendo.</p>
+                              <div class="row text-center">
+                                <a href="./CV-NATALY.pdf" class="btn btn-xl btn-light mr-4 col-5" download="cv_Nataly_Jallo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¡Descarga mi CV!</font></font></a>
+                                <a href="#/portafolio" class="btn btn-xl btn-dark col-5"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mis proyectos</font></font></a>
+                              </div>
+                        </div>
+
+                        <div class="col-md-6 order-md-1">
+                          <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="img/foto6-2.jpg" class="d-block w-100" alt="Taller de chatbot en IBM">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="img/foto3-1.jpg" class="d-block w-100" alt="Trabajo en equipo">
+                              </div>
+                              <div class="carousel-item">
+                               <img src="img/foto4-2.jpg" class="d-block w-100" alt="Charla en IBM">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+                        </div>
+                      
+                      </div>
+
+                      <footer class="bg-black small text-center text-white-50" style="margin-top: 10px">
+                        <div class="container-fluid">
+                          <div class="social d-flex justify-content-center" style="height: 30px;
+                          margin-bottom: 10px" >
+                            <a href="#" class="mx-2">
+                              <img class="icon" src="img/logo-linkedin.png" alt="linkedin">
+                            </a>
+                            <a href="#" class="mx-2">
+                              <img class="icon" src="img/simbolo-de-twitter.png" alt="twitter">
+                            </a>
+                            <a href="#" class="mx-2">
+                              <img class="icon" src="img/github-1.png" alt="github">
+                            </a>
+                          </div>
+                        </div>
+                          <h3 style="font-size: 12px">Copyright &copy; Your Website 2019</h3>
+                      </footer>
       `;
     const section = document.createElement('section');
     section.setAttribute('id', 'aboutMe');
@@ -140,265 +92,467 @@ export const templates = {
     },
     portafolio: () => {
         const templ = `
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h2 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>PROYECTOS</span></h2>
-        <p class="summary text-general">Estos son algunos de los proyectos desarrollados durante mi tiempo de preparación en Laboratoria.</p>
-        <br>
-        
-        <div class="row">
-          <div class="column">
-            <div class="card padding-top center">
-              <img src="img/lol3.JPG" alt="Jane" style="width:90%; height: 230px">
-              <div class="container2 height">
-              <h2 class="title-proyect text-general text-2">WIKILOL</h2>
-                <p class="summary-2 text-general text-3">Es una página que permite a los jugadores de LOL encontrar información 
-                   detallada de sus campeones como :<br>
-                - Un Top Ten de los mejores campeones.<br>
-                - Los tipos de campeones que existen.<br>
-                - Los datos específicos de cada campeón.<br>
-                - Cuánto aumentar el poder de ataque cuando avanza su nivel.</p>
-                <p><a href="https://github.com/natalyJallo/lim-2018-11-bc-core-am-data-lovers/tree/gh-pages" target="_blank"><button class="button">CODIGO</button></a></p>
-                <p><a href="https://natalyjallo.github.io/lim-2018-11-bc-core-am-data-lovers/src/" target="_blank"><button class="button">DEMO</button></a></p>
-              </div>
-            </div>
-          </div>
-        
-          <div class="column">
-            <div class="card padding-top center">
-              <img src="img/red1.JPG" alt="Mike" style="width:90%; height: 230px">
-              <div class="container2 height">
-                <h2 class="title-proyect text-general text-2">JOINCLUDE</h2>
-                <p class="summary-2 text-general">Es una red social orientado a personas feministas o que buscan
-                   la equidad de género donde se podrá compartir ideas, historias 
-                   e informacion relacionada al feminismo para llegar a ser una 
-                   comunidad fuerte que genere impacto social en el mundo.</p>
-                <p><a href="https://github.com/natalyJallo/LIM008-social-network/tree/gh-pages" target="_blank"><button class="button">CODIGO</button></a></p>
-                <p><a href="https://micaelasuarezcortez.github.io/LIM008-social-network/src/" target="_blank"><button class="button">DEMO</button></a></p>
-              </div>
-            </div>
-          </div>
+                      <div class="">
+                        <h1 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>PROYECTOS</span></h1>
+                        <p class="summary text-general">Estos son algunos de los proyectos desarrollados durante mi tiempo de preparación en Laboratoria.</p>
 
-          <div class="column">
-            <div class="card padding-top center">
-              <img src="img/md5.JPG" alt="John" style="width:90%; height: 230px">
-              <div class="container2 height">
-                <h2 class="title-proyect text-general text-2">MD-LINKS</h2>
-                <p class="summary-2 text-general">Markdown Links es una libreria que extrae y valida cada 
-                  link que haya dentro de un archivo o directorio en formato
-                   markdown, muestra el resultado total de links, el total 
-                   de links unicos y el total de links rotos.</p>
-                <p><a href="https://github.com/natalyJallo/LIM008-fe-md-links/tree/master" target="_blank"><button class="button">CODIGO</button></a></p>
-                <p><a href=""><button class="button" target="_blank">DEMO</button></a></p>
-              </div>
-            </div>
-          </div>
-        </div>
+                        <!-- Project Six -->
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7 card-margin">
+                              <a href="#">
+                              <div class="img-container">
+                                <img class="img-fluid rounded mb-3 mb-md-0" src="img/alicorp.PNG" alt="Proyecto de md links" style="width:100%; height: 320px">
+                              <div class="overlay over">
+                                <span><a class="" href="https://i.ibb.co/PtWkDVM/alicorp.png" target="_blank"><img class="" src="img/zoom.png" alt="proyecto de md-links" style="width:60px; height: 60px"></a></span>
+                              </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-sm-12 col-md-10 col-lg-5 col-xl-5">
+                              <h3 class="text-proyect">Proyecto TalentFest19 - Cliente Álicorp</h3>
+                              <p class="text-proyects">Plataforma de venta interna para generar colaboradores emprendedores dentro de la empresa de álicorp.<br>
+                                - Registro de personal<br>
+                                - Selección de productos a comprar<br>
+                                - Plataforma de compra y venta de productos<br>
+                              Herramientas:<br>
+                                <li class="text-proyects">Angular</li>
+                                <li class="text-proyects">Typescript</li>
+                                <li class="text-proyects">Firebase</li>
+                                <li class="text-proyects">Bootstrap</li><br>
+                            <div class="btn-proyect line-heigth">
+                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/lim-2018-11-bc-core-am-data-lovers/tree/gh-pages" target="_blank">Codigo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://natalyjallo.github.io/lim-2018-11-bc-core-am-data-lovers/src/" target="_blank">Demo</a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.row -->
+                    
+                          <hr>
 
-    </div>`;
+                        <!-- Project Five -->
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7 card-margin">
+                              <a href="#">
+                              <div class="img-container">
+                                <img class="img-fluid rounded mb-3 mb-md-0" src="img/burger-queen.PNG" alt="Proyecto de md links" style="width:100%; height: 320px">
+                              <div class="overlay over">
+                                <span><a class="" href="https://i.ibb.co/q9YF1KP/burger-queen.png" target="_blank"><img class="" src="img/zoom.png" alt="proyecto de md-links" style="width:60px; height: 60px"></a></span>
+                              </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-sm-12 col-md-10 col-lg-5 col-xl-5">
+                              <h3 class="text-proyect">Burger Queen</h3>
+                              <p class="text-proyects">Framework Angular<br>
+                              Interfaz empleando el framework de Angular, en la cual se realizan 
+                              pedidos a través de una tablet y estos pedidos son enviados a la 
+                              cocina en tiempo real para que el personal de cocina tome la orden
+                               y ejecute el pedido del cliente.<br>
+                               - Registra datos y número de orden del cliente<br>
+                               - Registra hora del pedido<br>
+                               - Realiza los cálculos según el pedido que corresponda<br>
+                              Herramientas:<br>
+                                <li class="text-proyects">Angular</li>
+                                <li class="text-proyects">Typescript</li>
+                                <li class="text-proyects">Firebase</li>
+                                <li class="text-proyects">Bootstrap</li><br>
+                            <div class="btn-proyect line-heigth">
+                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/lim-2018-11-bc-core-am-data-lovers/tree/gh-pages" target="_blank">Codigo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://natalyjallo.github.io/lim-2018-11-bc-core-am-data-lovers/src/" target="_blank">Demo</a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.row -->
+                    
+                          <hr>
+
+                          <!-- Project Four -->
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7 card-margin">
+                              <a href="#">
+                              <div class="img-container">
+                                <img class="img-fluid rounded mb-3 mb-md-0" src="img/md5.JPG" alt="Proyecto de md links" style="width:100%; height: 320px">
+                              <div class="overlay over">
+                                <span><a class="" href="https://i.ibb.co/nQQBRfD/md4.jpg" target="_blank"><img class="" src="img/zoom.png" alt="proyecto de md-links" style="width:60px; height: 60px"></a></span>
+                              </div>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="col-sm-12 col-md-10 col-lg-5 col-xl-5">
+                              <h3 class="text-proyect">Librería Md-links</h3>
+                              <p class="text-proyects">CLI y API<br>
+                              Markdown Links es una libreria que extrae y valida cada 
+                              link que haya dentro de un archivo o directorio en formato
+                              markdown, muestra el resultado total de links, el total 
+                              de links unicos y el total de links rotos.<br>
+                              Herramientas:<br>
+                              <li class="text-proyects">Codigo Vanilla</li>
+                              <li class="text-proyects">Node Fetch</li>
+                              <li class="text-proyects">Regex</li>
+                              <li class="text-proyects">Node js</li><br>
+                            <div class="btn-proyect line-heigth">
+                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/lim-2018-11-bc-core-am-data-lovers/tree/gh-pages" target="_blank">Codigo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://natalyjallo.github.io/lim-2018-11-bc-core-am-data-lovers/src/" target="_blank">Demo</a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.row -->
+                    
+                          <hr>
+                    
+                          <!-- Project Three -->
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7 card-margin">
+                              <a href="#">
+                              <div class="img-container">
+                              <img class="img-fluid rounded mb-3 mb-md-0" src="img/red1.JPG" alt="proyecto de red social" style="width:100%; height: 320px; max-width:640px">
+                            <div class="overlay over">
+                              <span><a class="" href="https://i.ibb.co/10FNDFx/red1.jpg" target="_blank"><img class="" src="img/zoom.png" alt="proyecto de joinclude" style="width:60px; height: 60px"></a></span>
+                            </div>
+                            </div>
+                              </a>
+                            </div>
+                            <div class="col-sm-12 col-md-10 col-lg-5 col-xl-5">
+                              <h3 class="text-proyect">Joinclude</h3>
+                              <p class="text-proyects">Es una red social orientado a personas feministas o que buscan
+                              la equidad de género donde se podrá compartir ideas, historias 
+                              e informacion relacionada al feminismo para llegar a ser una 
+                              comunidad fuerte que genere impacto social en el mundo.<br>
+                              Herramientas:<br>
+                              <li class="text-proyects">Node js</li>
+                              <li class="text-proyects">Firebase</li>
+                              <li class="text-proyects">Spa(Single Page Application)</li>
+                              <li class="text-proyects">Fetch</li>
+                              <li class="text-proyects">Mock Firebase</li>
+                              <li class="text-proyects">Jest</li>
+                              <li class="text-proyects">Css Plano</li><br>
+                            <div class="btn-proyect line-heigth">
+                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/LIM008-social-network/tree/gh-pages" target="_blank">Codigo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://natalyjallo.github.io/LIM008-social-network/src" target="_blank">Demo</a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.row -->
+                    
+                          <hr>
+                    
+                          <!-- Project Two -->
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7 card-margin">
+                              <a href="#">
+                              <div class="img-container">
+                              <img class="img-fluid rounded mb-3 mb-md-0" src="img/lol3.JPG" alt="proyecto de wikilol" style="width:100%; height: 320px; max-width:640px">
+                            <div class="overlay over">
+                              <span><a class="" href="https://i.ibb.co/FVQpxKm/lol2.jpg" target="_blank"><img class="" src="img/zoom.png" alt="proyecto de wikilol" style="width:60px; height: 60px"></a></span>
+                            </div>
+                            </div>
+                              </a>
+                            </div>
+                            <div class="col-sm-12 col-md-10 col-lg-5 col-xl-5">
+                              <h3 class="text-proyect">Wikilol</h3>
+                              <p class="text-proyects">Es una página que permite a los jugadores de LOL encontrar información 
+                              detallada de sus campeones como :<br>
+                              - Un Top Ten de los mejores campeones.<br>
+                              - Los tipos de campeones que existen.<br>
+                              - Los datos específicos de cada campeón.<br>
+                              - Cuánto aumentar el poder de ataque cuando avanza su nivel.<br>
+                              Herramientas:<br>
+                              <li class="text-proyects">Node js</li>
+                              <li class="text-proyects">Css Plano</li>
+                              <li class="text-proyects">Fetch</li>
+                              <li class="text-proyects">Jest</li>
+                              <li class="text-proyects">Codigo Vanilla</li><br>
+                            <div class="btn-proyect line-heigth">
+                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/lim-2018-11-bc-core-am-data-lovers/tree/gh-pages">Codigo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://natalyjallo.github.io/lim-2018-11-bc-core-am-data-lovers/src">Demo</a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.row -->
+                    
+                          <hr>
+                    
+                          <!-- Project One -->
+                          <div class="row d-flex justify-content-center">
+                            <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7 card-margin">
+                              <a href="#">
+                              <div class="img-container">
+                              <img class="img-fluid rounded mb-3 mb-md-0" src="img/cifrado.JPG" alt="Proyecto de cipher" style="width:100%; height: 320px">
+                            <div class="overlay over">
+                              <span><a class="" href="https://i.ibb.co/v48GRPy/cifrado.jpg" target="_blank"><img class="" src="img/zoom.png" alt="proyecto de cifrado cesar" style="width:60px; height: 60px"></a></span>
+                            </div>
+                            </div>
+                              </a>
+                            </div>
+                            <div class="col-sm-12 col-md-10 col-lg-5 col-xl-5">
+                              <h3 class="text-proyect">Cyberhapp</h3>
+                              <p class="text-proyects">Es una aplicacion web que te ayuda a crear claves y/o contraseñas 
+                              secretas dificiles de hackear, donde puedes usar diferentes caracteres
+                              del alfabeto(mayusculas y minusculas) y que no hay limites de extension
+                                al crear tus contraseñas.<br>
+                                Herramientas:<br>
+                                <li class="text-proyects">Node js</li>
+                                <li class="text-proyects">Css Plano</li>
+                                <li class="text-proyects">Mocha y Chai</li>
+                                <li class="text-proyects">Codigo Vanilla</li><br>
+                              <div class="btn-proyect line-heigth">
+                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/lim-2018-11-bc-core-am-cipher">Codigo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://natalyjallo.github.io/lim-2018-11-bc-core-am-cipher/src/">Demo</a>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- /.row -->
+
+                          <footer class="bg-black small text-center text-white-50" style="margin-top: 10px">
+                        <div class="container-fluid">
+                          <div  >
+                            <a href="#" class="mx-2">
+                              <img class="icon" src="img/logo-linkedin.png" alt="linkedin">
+                            </a>
+                            <a href="#" class="mx-2">
+                              <img class="icon" src="img/simbolo-de-twitter.png" alt="twitter">
+                            </a>
+                            <a href="#" class="mx-2">
+                              <img class="icon" src="img/github-1.png" alt="github">
+                            </a>
+                          </div>
+                        </div>
+                          <h3 style="font-size: 12px">Copyright &copy; Your Website 2019</h3>
+                      </footer>
+                    
+                        </div>
+        `;
 
         const section = document.createElement('section');
         section.setAttribute('id', 'portafolio');
+        section.setAttribute('class', 'padding-section');
         section.innerHTML = templ;
 
         return section;
     }, 
     skills: () => {
         const templ = `
-        <div class="row2 margin1">
-        <h2 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>HABILIDADES</span></h2>
-        <p class="summary text-general">Estas son algunas de las herramientas que aprendí y utilicé durante el Bootcamp.</p>
-      <!-- Portfolio Gallery Grid -->
-      <!-- <div class="myBtnContainer" id="myBtnContainer">
-          <button class="btn active" id="all">Todos</button>
-          <button class="btn" id="editor">Editor</button>
-          <button class="btn" id="frame">Frameworks</button>
-          <button class="btn" id="lenguaje">Lenguajes de programacion</button>
-          <button class="btn" id="test">Tests</button>
-          <button class="btn" id="prototipo">Prototipo</button>
-          <button class="btn" id="otros">Otros</button>
-        </div>-->
 
-        <div class="column2 nature">
-        <a href="https://www.javascript.com/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/js.png" alt="javascript" style="width:50px">
-            <h4 class="hight text-general font">JAVASCRIPT</h4>
-          </div></a>
-        </div>
-        <div class="column2 nature">
-          <a href="https://www.w3schools.com/html/" target="_blank" class="style-text2"><div class="content2">
-          <img src="img/html.png" alt="html" style="width:50px">
-            <h4 class="hight text-general font">HTML</h4>
-          </div></a>
-        </div>
-        <div class="column2 nature">
-        <a href="https://www.w3schools.com/css/" target="_blank" class="style-text2"><div class="content2">
-          <img src="img/css1.png" alt="css" style="width:50px">
-            <h4 class="hight text-general font">CSS</h4>
-          </div></a>
-        </div>
-        
-        <div class="column2 nature">
-        <a href="https://nodejs.org/es/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/nodejs.png" alt="nodejs" style="width:50px">
-            <h4 class="hight text-general font">NODE JS</h4>
-          </div></a>
-        </div>
-        <div class="column2 nature">
-        <a href="https://www.npmjs.com/" target="_blank" class="style-text2"><div class="content2">
-          <img src="img/npm.png" alt="npm" style="width:50px">
-            <h4 class="hight text-general font">NPM</h4>
-          </div></a>
-        </div>
-        <div class="column2 nature">
-        <a href="https://slack.com/intl/es-es/" target="_blank" class="style-text2"><div class="content2">
-          <img src="img/slack.png" alt="slack" style="width:50px">
-            <h4 class="hight text-general font">SLACK</h4>
-          </div></a>
-        </div>
-      
-        <div class="column2 editor" >
-        <a href="https://code.visualstudio.com/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/visual.png" alt="visual" style="width:50px"></a>
-            <h4 class="hight text-general font">VISUAL CODE</h4>
-          </div></a>
-        </div>
-        <div class="column2 editor">
-        <a href="https://atom.io/" target="_blank" class="style-text2"><div class="content2">
-          <img src="img/atom.png" alt="atom" style="width:50px">
-            <h4 class="hight text-general font">ATOM</h4>
-          </div></a>
-        </div>
-        <div class="column2 nature">
-        <a href="https://firebase.google.com/?hl=es-419" target="_blank" class="style-text2"><div class="content2">
-          <img src="img/firebase.png" alt="firebase" style="width:50px">
-            <h4 class="hight text-general font">FIREBASE</h4>
-          </div></a>
-        </div>
-        <div class="column2 nature">
-        <a href="https://git-scm.com/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/git2.png" alt="git" style="width:50px">
-              <h4 class="hight text-general font">GIT</h4>
-            </div></a>
-          </div>
-        <div class="column2 framework">
-        <a href="https://angular.io/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/angular.png" alt="angular" style="width:50px">
-              <h4 class="hight text-general font">ANGULAR</h4>
-            </div></a>
-          </div>
-        <div class="column2 nature">
-        <a href="https://getbootstrap.com/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/bootstrap.png" alt="bootstrap" style="width:50px">
-              <h4 class="hight text-general font">BOOTSTRAP</h4>
-            </div></a>
-          </div>
-        <div class="column2 nature">
-        <a href="https://codepen.io/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/codepen.png" alt="codepen" style="width:50px">
-              <h4 class="hight text-general font">CODEPEN</h4>
-            </div></a>
-          </div>
-        <div class="column2 nature">
-        <a href="https://trello.com/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/trello.png" alt="trello" style="width:50px">
-              <h4 class="hight text-general font">TRELLO</h4>
-            </div></a>
-          </div>
-        <div class="column2 nature">
-        <a href="https://github.com/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/github.png" alt="github" style="width:50px">
-              <h4 class="hight text-general font">GITHUB</h4>
-            </div></a>
-          </div>
-      <div class="column2 nature">
-      <a href="https://stackoverflow.com/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/stackoverflow.png" alt="stackoverflow" style="width:50px">
-              <h4 class="hight text-general font font">STACKOVERFLOW</h4>
-            </div></a>
-          </div>
-      <div class="column2 nature">
-      <a href="" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/jest3.png" alt="jest" style="width:50px">
-              <h4 class="hight text-general font">JEST</h4>
-              </div></a>
+        <h1 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>HABILIDADES </span></h1>
+        <div class="row2 margin1">
+          
+          <p class="summary text-general">Estas son las habilidades blandas que he podido desarrollar durante mi desarrollo profesional.</p>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="radial-prog-area margin-b-30" style="text-align: center" >
+                <img src="img/equipo.png" alt="" style="">
+                <h2 class="text-skills text-general">Disfruto trabajar en equipo</h2>
+              </div>
             </div>
-          <div class="column2 nature">
-      <a href="https://developer.mozilla.org/es/" target="_blank" class="style-text2"><div class="content2">
-            <img src="img/mdn.jpg" alt="mdn" style="width:50px">
-              <h4 class="hight text-general font">MDN WEB DOCS</h4>
-            </div></a>
+
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="radial-prog-area margin-b-30" style="text-align: center">
+                <img src="img/ayudar.png" alt="" style="">
+                <h2 class="text-skills text-general">Me gusta poder ayudar a los demas</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="radial-prog-area margin-b-30" style="text-align: center">
+                <img src="img/idea-genial.png" alt="" style="">
+                <h2 class="text-skills text-general">Me adapto a las metodologias agiles</h2>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="radial-prog-area margin-b-30" style="text-align: center">
+                <img src="img/dibujo.png" alt="" style="">
+                <h2 class="text-skills text-general">Puedo manejar mi nivel de estres</h2>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="radial-prog-area margin-b-30" style="text-align: center">
+                <img src="img/red.png" alt="" style="">
+                <h2 class="text-skills text-general">Me puedo adaptar en diferentes ambientes</h2>
+              </div>
+            </div>
+            
+            <div class="col-sm-6 col-md-6 col-lg-4">
+                <div class="radial-prog-area margin-b-30" style="text-align: center">
+                <img src="img/estudiante.png" alt="" style="">
+                <h2 class="text-skills text-general">Puedo controlar mi nivel de aprendizaje</h2>
+              </div>
+            </div>
           </div>
-          <div class="column2 nature">
-          <a href="https://www.figma.com/" target="_blank" class="style-text2"><div class="content2">
-                <img src="img/figma.png" alt="figma" style="width:50px">
-                  <h4 class="hight text-general font">FIGMA</h4>
-                </div></a>
-              </div>
-              <div class="column2 nature">
-          <a href="https://zeplin.io/" target="_blank" class="style-text2"><div class="content2">
-                <img src="img/zeplin.png" alt="zeplin" style="width:50px">
-                  <h4 class="hight text-general font">ZEPLIN</h4>
-                </div></a>
-              </div>
-      <!-- END GRID -->
-    </div>`;
+        </div>
+
+
+        <h1 class="title-2 padding text3" id="title2">HERRAMIENTAS DE PROGRAMACIÓN</h1>
+        <p class="summary text-general">Estas son algunas de las herramientas que aprendí y utilicé durante el Bootcamp.</p>
+        
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="service-icon rounded-circle mx-auto mb-3" style="background-color: #f9cd4af0; height: 140px; text-align: center;width: 140px;">
+            <img src="img/angular.png" alt="angular" style="width:90px; margin-top: 25px">
+            </div>
+            <h4 class="style-skill">Angular</h4>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="service-icon rounded-circle mx-auto mb-3" style="background-color: #f9cd4af0; height: 140px; text-align: center;width: 140px;">
+              <img src="img/js.png" alt="javascript" style="width:90px; margin-top: 25px">
+            </div>
+            <h4 class="style-skill">Javascript</h4>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="service-icon rounded-circle mx-auto mb-3" style="background-color: #f9cd4af0; height: 140px; text-align: center;width: 140px;">
+              <img src="img/html.png" alt="html" style="width:90px; margin-top: 25px">
+            </div>
+            <h4 class="style-skill">Html5</h4>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="service-icon rounded-circle mx-auto mb-3" style="background-color: #f9cd4af0; height: 140px; text-align: center;width: 140px;"> 
+              <img src="img/css1.png" alt="css" style="width:90px; margin-top: 25px">
+            </div>
+            <h4 class="style-skill">Css3</h4>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="service-icon rounded-circle mx-auto mb-3" style="background-color: #f9cd4af0; height: 140px; text-align: center;width: 140px;">
+              <img src="img/node-1.png" alt="nodejs" style="width:90px; margin-top: 25px">
+            </div>
+            <h4 class="style-skill">Node Js</h4>
+          </div>
+        
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="service-icon rounded-circle mx-auto mb-3" style="background-color: #f9cd4af0; height: 140px; text-align: center;width: 140px;">
+              <img src="img/firebase.png" alt="firebase" style="width:90px; margin-top: 25px">
+            </div>
+            <h4 class="style-skill">Firebase</h4>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="service-icon rounded-circle mx-auto mb-3" style="background-color: #f9cd4af0; height: 140px; text-align: center;width: 140px;">
+              <img src="img/bootstrap.png" alt="bootstrap" style="width:90px; margin-top: 25px">
+            </div>
+            <h4 class="style-skill">Bootstrap</h4>
+          </div>
+    
+          <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+            <div class="service-icon rounded-circle mx-auto mb-3" style="background-color: #f9cd4af0; height: 140px; text-align: center;width: 140px;">  
+            <img src="img/trello.png" alt="trello" style="width:90px; margin-top: 25px">
+            </div>
+            <h4 class="style-skill">Trello</h4>
+          </div>
+
+          </div>
+        </div>
+
+        <footer class="bg-black small text-center text-white-50" style="margin-top: 10px">
+          <div class="container-fluid">
+            <div  >
+              <a href="#" class="mx-2">
+                <img class="icon" src="img/logo-linkedin.png" alt="linkedin">
+              </a>
+              <a href="#" class="mx-2">
+                <img class="icon" src="img/simbolo-de-twitter.png" alt="twitter">
+              </a>
+              <a href="#" class="mx-2">
+                <img class="icon" src="img/github-1.png" alt="github">
+              </a>
+            </div>
+          </div>
+          <h3 style="font-size: 12px">Copyright &copy; Your Website 2019</h3>
+        </footer>
+      
+        <!-- END GRID -->
+    `;
 
         const section = document.createElement('section');
         section.setAttribute('id', 'skills');
+        section.setAttribute('class', 'padding-section');
         section.innerHTML = templ;
-
-        // const btnEditor = section.querySelector('#editor')
-        // btnEditor.addEventListener('click', () => {
-        //   filterSelection('editor');
-        //   active(section);
-        //   });
 
         return section;
     }, 
     contact: () => {
         const templ = `
-        <div>
-            <div class="">
-               <h1 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>CONTACTAME</span></h1>
-               <h2 class="summary text-general">No dudes en contactarme, juntos podemos lograr buenos proyectos.</h2>
-               <div class="btn-cv"><a class="center2" href="https://drive.google.com/open?id=1gIuFBSUPsfAEK9uH3ouv_feZfgn9MBM4" target="_blank">VER CV</a></div></div>
-               <div class="colum-3 card title-proyect hight-2">
-               <a href="https://github.com/natalyJallo" target="_blank" class="style-text2"><div class="content2">
-               <img src="img/logo1.png" alt="github" style="width:50%">
-                 <h4 class="text-general">Github</h4>
-                 <h5 class="text-general">natalyJallo</h5>
-               </div></a>
-             </div>
+        <h1 class="text-section padding text-general text3" id="title2" contenteditable="false" spellcheck="false"><span>CONTACTAME</span></h1>
+        <h2 class="summary text-general">No dudes en contactarme, juntos podemos lograr buenos proyectos.</h2>
+        
+        <div class="row margin1" style="justify-content: center">
+            <div class="btn-cv col-2"><a href="./CV-NATALY.pdf" class="center2" download="cv_Nataly_Jallo"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¡Descarga mi CV!</font></font></a></div>
+            <div class="btn-cv col-2"><a href="#/portafolio" class="center2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mis proyectos</font></font></a></div>    
+        </div>
+        
+        <section class="contact-section">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                    <img src="img/ubicacion.png" alt="direccion" style="width:20%;margin-bottom: 20px">
+                    <h4 class="text-uppercase m-0">Direccion</h4>
+                    <hr class="my-4">
+                    <div class="small text-black-50">Ate Vitarte, Lima - Peru</div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                    <img src="img/correo.png" alt="correo" style="width:20%;margin-bottom: 20px">
+                    <h4 class="text-uppercase m-0">Email</h4>
+                    <hr class="my-4">
+                    <div class="small text-black-50">
+                      <a href="#">frontenddev.natalyjallo@gmail.com</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                  <div class="card-body text-center">
+                    <img src="img/telefono-inteligente.png" alt="celular" style="width:20%;margin-bottom: 20px">
+                    <h4 class="text-uppercase m-0">Phone</h4>
+                    <hr class="my-4">
+                    <div class="small text-black-50">+51 983 545 568</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </section>
+    
+      <!-- Footer -->
+      
+        <footer class="bg-black small text-center text-white-50" style="margin-top: 10px">
+          <div class="container-fluid">
+            <div  >
+              <a href="#" class="mx-2">
+                <img class="icon" src="img/logo-linkedin.png" alt="linkedin">
+              </a>
+              <a href="#" class="mx-2">
+                <img class="icon" src="img/simbolo-de-twitter.png" alt="twitter">
+              </a>
+              <a href="#" class="mx-2">
+                <img class="icon" src="img/github-1.png" alt="github">
+              </a>
+            </div>
+          </div>
+          <h3 style="font-size: 12px">Copyright &copy; Your Website 2019</h3>
+        </footer>
 
-             <div class="colum-3 card title-proyect hight-2">
-             <a href="https://www.linkedin.com/in/nataly-jallo-arana-750394137/" target="_blank" class="style-text2"><div class="content2">
-               <img src="img/linkedin.png" alt="linkedin" style="width:50%">
-                 <h4 class="text-general">Linkedin</h4>
-                 <h5 class="text-general">nataly jallo arana</h5>
-               </div></a>
-             </div>
-
-             <div class="colum-3 card title-proyect hight-2">
-             <a href="" target="_blank" class="style-text2"><div class="content2">
-               <img src="img/cel.png" alt="celular" style="width:50%">
-                 <h4 class="text-general">Celular</h4>
-                 <h5 class="text-general">983 545 568</h5>
-               </div></a>
-             </div>
-
-             <div class="colum-3 card title-proyect hight-2">
-             <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank" class="style-text2"><div class="content2">
-               <img src="img/gmail1.png" alt="gmail" style="width:50%">
-                 <h4 class="text-general">Gmail</h4>
-                 <h5 class="text-general">marketing20.nat@gmail.com</h5>
-               </div></a>
-             </div>
-
-             <div class="end"><h2>Realizado por Nataly Jallo Arana</h2></div>
-    </div>`;
+            `;
 
         const section = document.createElement('section');
         section.setAttribute('id', 'contact');
+        section.setAttribute('class', 'padding-section');
         section.setAttribute('style', 'height:100%')
         section.innerHTML = templ;
 
