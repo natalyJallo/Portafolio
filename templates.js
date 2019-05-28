@@ -123,8 +123,8 @@ export const templates = {
                                 <li class="text-proyects">Firebase</li>
                                 <li class="text-proyects">Bootstrap</li><br>
                             <div class="btn-proyect line-heigth">
-                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/lim-2018-11-bc-core-am-data-lovers/tree/gh-pages" target="_blank">Codigo</a>
-                              <a class="btn-2 bg-warning center2 " href="https://natalyjallo.github.io/lim-2018-11-bc-core-am-data-lovers/src/" target="_blank">Demo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/cat-logo-alicorp-talent-fest" target="_blank">Codigo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://alicorp-catalogo-firestore.firebaseapp.com/vista2/homepage" target="_blank">Demo</a>
                               </div>
                             </div>
                           </div>
@@ -160,8 +160,8 @@ export const templates = {
                                 <li class="text-proyects">Firebase</li>
                                 <li class="text-proyects">Bootstrap</li><br>
                             <div class="btn-proyect line-heigth">
-                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/lim-2018-11-bc-core-am-data-lovers/tree/gh-pages" target="_blank">Codigo</a>
-                              <a class="btn-2 bg-warning center2 " href="https://natalyjallo.github.io/lim-2018-11-bc-core-am-data-lovers/src/" target="_blank">Demo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://github.com/natalyJallo/LIM008-fe-burger-queen" target="_blank">Codigo</a>
+                              <a class="btn-2 bg-warning center2 " href="https://burger-queen-8fb20.firebaseapp.com/" target="_blank">Demo</a>
                               </div>
                             </div>
                           </div>
@@ -244,7 +244,7 @@ export const templates = {
                             <div class="col-sm-12 col-md-10 col-lg-7 col-xl-7 card-margin">
                               <a href="#">
                               <div class="img-container">
-                              <img class="img-fluid rounded mb-3 mb-md-0" src="img/lol3.JPG" alt="proyecto de wikilol" style="width:100%; height: 320px; max-width:640px">
+                              <img class="img-fluid rounded mb-3 mb-md-0" src="img/lol3.jpg" alt="proyecto de wikilol" style="width:100%; height: 320px; max-width:640px">
                             <div class="overlay over">
                               <span><a class="" href="https://i.ibb.co/FVQpxKm/lol2.jpg" target="_blank"><img class="" src="img/zoom.png" alt="proyecto de wikilol" style="width:60px; height: 60px"></a></span>
                             </div>
